@@ -4,32 +4,45 @@
    <title>H_YO2II</title>
    <meta charset="utf-8">
     <style>
+        a{
+        text-decoration: none;
+        }
         h1{
-            border-bottom:10px solid green;
+            border-bottom:10px solid gray;
             padding : 30px;
         }
         #container{
           display:grid;
-          grid-template-columns: 150px 1fr;
+          grid-template-columns: 1fr 2fr;
         }
         @media all and (min-width: 480px){ 
             body{
-                background-color:beige;
+                background-color:pink;
             }
         }
         
         @media all and (max-width: 480px) {
             body{
-                background-color:red;
+                background-color:beige;
             }
         }
+        h1{ font-family: 'PT Sans', sans-serif;
+        }
     </style>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@600&family=Roboto+Mono:wght@100&display=swap" rel="stylesheet">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@1,700&display=swap" rel="stylesheet">
  </head>
  
 <body>
+  <input type="button" value="night" onclick="
+  document.querySelector('body').style.backgroundColor = 'black';
+  document.querySelector('body').style.color = 'white';
+">
+<input type="button" value="day" onclick="
+  document.querySelector('body').style.backgroundColor = 'white';
+  document.querySelector('body').style.color = 'black';
+">
  <h1 ><a href="index.html">WEB</a></h1>
     <div id="container">
         <ol> 
@@ -42,6 +55,8 @@
         Hello <a href="http://info.cern.ch/hypertext/WWW/TheProject.html">WEB</a>
       </div>
     </div>
+    <br>
+    <br>
 
     <div id="disqus_thread"></div>
     <script>
