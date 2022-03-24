@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+
+<body>
+       <script>
+           let input_id = prompt('아이디를 입력하세요');
+           //만약 input_id가 yeon과 같다면 아래 코드를 실행
+           if(input_id === 'yeon'){
+           alert(input_id+'님 안녕하세요!');
+           } else {
+               alert('누구죠?!');
+           }
+       </script>
+
+<input type="button" id="dnbtn" value="night" onclick="
+let button = document.querySelector('#dnbtn');
+if(button.value === 'night'){
+    document.querySelector('body').style.backgroundColor = 'black';
+    document.querySelector('body').style.color = 'white';
+    button.value = 'day';
+} else {
+    document.querySelector('body').style.backgroundColor = 'white';
+    document.querySelector('body').style.color = 'black';
+    button.value = 'night';
+}
+">
+
+ <h1>HELLO WORLD</h1>
+ Why won't work this code!!
+ </body>
+
+ </html>

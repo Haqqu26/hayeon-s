@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+    <head>
+    </head>
+    <body>
+        <h1>배열(Array)</h1>
+        <script>
+            let topics = ['html', 'css', 'js'];
+            console.log(topics.length); //3
+            console.log(topics[0]); //html
+            console.log(topics[1]); //css
+            console.log(topics[2]); //js
+        </script>
+
+        <h1>반복문(Loop)</h1>
+        <script>
+            //i는 0부터 시작하여 1씩 증가(i<5가 될 때까지) 
+            console.log(1);
+            for(let i=0; i<5 ;i=i+1 ){
+                console.log(2);
+                console.log(3);
+            }
+                console.log(4);
+        </script>
+
+        <h1>Array + Loop</h1>
+        <script>
+            topics = ['html', 'css', 'js'];
+            for(let i=0; i<topics.length; i=i+1){
+                console.log('i=>',topics[i]);
+                document.write('<li>'+topics[i]+'</li>');
+            }
+        </script>
+    </body>
+</html>
