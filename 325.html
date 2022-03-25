@@ -1,0 +1,104 @@
+<!doctype html>
+<html>
+    <head>
+        <style>
+            h1{
+                border-bottom:5px solid rgb(252, 147, 165);
+            }
+            body{
+                background-color: rgb(248, 236, 222);
+            }
+        </style>
+    </head>
+    <body>
+        <h1>2022.03.25</h1> 
+        <!--loop,function,object-->
+
+        <script>
+            function dark(){
+                document.querySelector('body').style.backgroundColor = '#5E6472';
+                document.querySelector('body').style.color = 'white';
+             }
+            function day(){
+                document.querySelector('body').style.backgroundColor = 'pink';
+                document.querySelector('body').style.color = 'black';
+            }
+        </script>
+        
+        <input type="button" value="dark.ver" onclick="
+           let button = this;
+           if(button.value === 'dark.ver'){
+                dark();
+                button.value = 'day.ver';
+            } else{
+                day();
+                button.value = 'dark.ver';
+            }
+        ">
+        
+
+        <h3>배열(Array)</h3>
+        <script>
+            let topics = ['html', 'css', 'js'];
+            console.log(topics.length); //3
+            console.log(topics[0]); //html
+            console.log(topics[1]); //css
+            console.log(topics[2]); //js
+        </script>
+        
+        <h3>반복문(Loop)</h3>
+        <script>
+          //i<5일 때 까진 i가 0부터 시작하여 1씩 증가
+          for(let i=0; i<5; i=i+1){
+              console.log('a');
+              console.log('b');
+          }  
+              console.log('c');
+        </script>
+
+         <h3>Array + Loop</h3>
+         <script>
+             topics = topics = ['html', 'css', 'js'];
+             for(let i=0; i<topics.length; i=i+1){
+                 console.log('i=',topics[i]);
+                 document.write('<li>'+topics[i]+'</li>');
+             }          
+         </script>
+
+
+        <h3>Function</h3>
+        <script>
+           function abc(){
+               console.log('a');
+               console.log('b');
+               console.log('c');
+           }
+                console.log(1);
+                console.log(2);
+                abc();
+                console.log(3);
+                abc();
+                console.log(4);
+        </script>
+        
+        <h3>VAT</h3>
+        <script>
+            function 부가세계산(가격,부가세율) //괄호 안은 매개변수, parameter
+            { let 부가세 = 가격*부가세율;
+                return 부가세;
+            }
+            console.log(부가세계산(2000,0.1)); //괄호 안은 인자,입력값,argument
+        </script>
+
+        <h3>Object</h3>
+        <script>
+            //배열
+            let student = ['ayla', 'ella']
+            console.log(student[0], student[1]);
+            //객체지향
+            let member = {developer:'ayla', forwarder:'ella'};
+            console.log(member.developer, member.forwarder);
+        </script>
+
+    </body>
+</html>
